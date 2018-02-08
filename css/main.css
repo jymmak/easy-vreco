@@ -13,29 +13,27 @@
 
 .btn-warning{
   float: right;
-  margin-right: 20%;
-  margin-top: -10%;
-
+  margin-right: 10%;
+  margin-top: -3%;
+ 
 }
-#btn-route{
-  float: left;
-  margin-left: 35%;
-  margin-top:-10%;
+#btnIndication{
+  float: right;
+  margin-rigth: 35%;
   background-color: orange;
+  margin-top: 65%;
 }
 
-.control-group{
+.form-group{
 width: 20%;
-margin-left: 10%;
-}
-.end{
-  margin-bottom: 3%;
+margin-top: 2%;
 }
 
 #map{
- 
-  width: 100%;
+  margin-top: 3%;
+  width: 80%;
   height: 70vh;
+  margin-left: 9%;
   border: 1px solid black;
 }
 

@@ -1,7 +1,6 @@
 function initMap() {
 
-  var directionsService = new google.maps.DirectionsService;
-  var directionsDisplay = new google.maps.DirectionsRenderer;
+
   var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 7,
     center: { lat: -12.020651498087096, lng: -77.0349046 },
@@ -38,11 +37,5 @@ function initMap() {
   var funcionError = function (error) {
     alert("tenemos un problema con encontrar tu ubicación");
   }
-
-  directionsDisplay.setMap(map);
-  var onChangeHandler = function () {
-    calculateAndDisplayRoute(directionsService, directionsDisplay);
-  };
-  route.addEventListener('click', onChangeHandler);
 
 }

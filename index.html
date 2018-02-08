@@ -24,25 +24,27 @@
     <div class="row">
       <div class="col-md-12 col-sm-12 search">
 
-        <form>
-          <div class="control-group source" id="source">
-            <label class="control-label" for="Origen">Origen</label>
-            <input type="text" class="form-control" placeholder="Introduce tu ubicación" autofocus required />
+        <form class="form-inline">
+          <div class="form-group col-md-4">
+              <label for="origin">Origen</label>
+              <input id="origin" type="text" class="form-control" placeholder="Introduce una ubicacion">
           </div>
-          <div class="control-group end" id="end">
-            <label class="control-label" for="Destino">Destino</label>
-            <input type="text" class="form-control" placeholder="Introduce tu ubicación" autofocus required />
+          <div class="form-group col-md-4">
+              <label for="destination">Destino</label>
+              <input id="destination" type="text" class="form-control" placeholder="Introduce una ubicacion">
           </div>
-          <button id="btn-route" class="btn">Ruta</button>
-        </form>
+          <div>
+            <button id="btnIndication" class="btn btn-primary">Ruta</button>
+          </div>
+        </form>  
 
-        <div>
-          <button type="button" class="btn btn-warning" id="locat">Encuéntrame</button>
-        </div>
+        <button type="button" class="btn btn-warning" id="locat">Encuéntrame</button>
       </div>
     </div>
+    
     <div id="map"></div>
     </div>
+
   </section>
 
   <footer class="footer1">
@@ -100,6 +102,7 @@
   <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
   <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/ruta.js"></script>
 </body>
 
 </html>
