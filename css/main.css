@@ -10,23 +10,17 @@
   font-family: 'Lobster', cursive;
   font-size: 3rem;
 }
-
-.btn-warning{
-  float: right;
-  margin-right: 10%;
-  margin-top: -3%;
- 
-}
 #btnIndication{
-  float: right;
-  margin-rigth: 35%;
-  background-color: orange;
-  margin-top: 65%;
+ margin-left: 30%;
+ margin-top: 30%;
 }
 
 .form-group{
-width: 20%;
-margin-top: 2%;
+  margin-top: 2%;
+}
+.btn-warning{
+  margin-top: 2%;
+  margin-left: 4%;
 }
 
 #map{
