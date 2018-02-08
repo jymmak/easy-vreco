@@ -12,7 +12,7 @@ let calculateAndDisplayRoute = (directionsService, directionsDisplay) => {
     origin: inputFrom.value,
     destination: inputTo.value,
     travelMode: 'DRIVING'
-  }, function(response, status) {
+  }, function (response, status) {
     if (status === 'OK') {
       directionsDisplay.setDirections(response);
     } else {
@@ -27,8 +27,8 @@ function initMap() {
   let map = new google.maps.Map(document.getElementById('map'), {
     zoom: 7,
     center: {
-      lat: -12.020651498087096, 
-      lng: -77.0349046 
+      lat: -12.020651498087096,
+      lng: -77.0349046
     }
   });
   directionsDisplay.setMap(map);
@@ -46,7 +46,7 @@ function initMap() {
     }
   }
 
-  document.getElementById("locat").addEventListener("click", buscar);
+  document.getElementById('locat').addEventListener('click', buscar);
   let latitud, longitud;
   let icons = 'assets/images/bici.png';
 
@@ -66,7 +66,7 @@ function initMap() {
   }
 
   let funcionError = function (error) {
-    alert("tenemos un problema con encontrar tu ubicación");
+    alert('tenemos un problema con encontrar tu ubicación');
   }
 
 }
