@@ -1,25 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>LYFT</title>
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <title>Geolocation</title>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <link rel="stylesheet" href="assets/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
   <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
+  <nav class='navbar navbar-default'>
+    <div class='container-fluid'>
+      <h1 class="text-principal">L
+        <i class="fa fa-spinner fa-spin" aria-hidden="true"></i>cat</h1>
+    </div>
+  </nav>
+
+  <section>
+    <div class="row">
+      <div class="col-md-12 col-sm-12 search">
+
+        <form>
+          <div class="control-group source">
+            <label class="control-label" for="Origen">Origen</label>
+            <input type="text" class="form-control" placeholder="Introduce tu ubicación" autofocus required />
+          </div>
+          <div class="control-group end">
+            <label class="control-label" for="Destino">Destino</label>
+            <input type="text" class="form-control" placeholder="Introduce tu ubicación" autofocus required />
+          </div>
+          <button id="btn-route" class="btn">Ruta</button>
+        </form>
+
+        <div>
+          <button type="button" class="btn btn-warning" id="locat">Encuéntrame</button>
+        </div>
+      </div>
+    </div>
+    <div id="map"></div>
+    </div>
+  </section>
 
 
 
 
+
+
+
+
+  <footer class="footer1">
+    <div class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 social">
+            <p>
+              <strong>SOCIAL</strong>
+            </p>
+
+            <a href="">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a href="">
+              <i class="fab fa-twitter"></i>
+            </a>
+
+            <a href="">
+              <i class="fab fa-google-plus-g"></i>
+            </a>
+
+            <a href="">
+              <i class="fab fa-pinterest"></i>
+            </a>
+
+            <a href="">
+              <i class="fab fa-youtube"></i>
+            </a>
+
+          </div>
+          <div class="col-xs-12 social2">
+            <p class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+              <strong>CONTÁCTENOS</strong <br>
+              <p>957456483 / 985643874</p>
+              <br>
+              <p>informes@locat.com.pe</p>
+            </p>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <!--/.footer-->
+
+  </footer>
 
 
 
   <!-- Sección scripts-->
+  <script async defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAPsMj24rd-l819fhYTIufEjEh6TxvEPUU&callback=initMap&libraries=places"></script>
+  <!--despues de key y antes de & callback va nuestra key que pedimos en google-->
   <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
   <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
   <script src="js/app.js"></script>
