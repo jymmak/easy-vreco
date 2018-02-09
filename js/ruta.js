@@ -8,6 +8,7 @@ let autocompleteInputs = () => {
 };
 
 let calculateAndDisplayRoute = (directionsService, directionsDisplay) => {
+  event.preventDefault();
   directionsService.route({
     origin: inputFrom.value,
     destination: inputTo.value,
